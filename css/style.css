@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    height: 100vh;
+    background-color: hsl(275, 100%, 97%);
+    background-image: url(../assets/images/background-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper .container{
+    background-color:white;
+    width: 35%;
+    padding: 50px;
+    border-radius: 15px;
+    font-family: 'Work Sans';
+}
+
+.wrapper .container .faq{
+    display: flex;
+}
+
+.wrapper .container .faq h1{
+    padding-left: 10px;
+}
+
+.wrapper .container .faq-questions{
+    padding-top: 30px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(205, 205, 205);
+}
+
+.wrapper .container .faq-questions h3{
+    padding-bottom: 15px;
+    transform: 0.7s all;
+}
+
+.wrapper .container .faq-questions h3:hover{
+    color: hsl(292, 92%, 39%);
+}
+
+.wrapper .container .faq-questions .answers{
+    display: none;
+}
+
+.wrapper .container .faq-questions .questions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrapper .container .faq-questions .questions .minus{
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .wrapper{
+        background-image: url(../assets/images/background-pattern-mobile.svg);
+    }
+    .wrapper .container {
+        width: 75% !important;
+        padding: 30px;
+    }
+
+    .wrapper .container .faq h1 {
+        font-size: 25px;
+    }
+
+    .wrapper .container .faq-questions h3 {
+        font-size: 14px;
+    }
+
+    .wrapper .container .faq-questions .answers{
+        font-size: 12px;
+    }
+}
+
+@media (min-width:601px) and (max-width: 767px) {
+    .wrapper .container {
+        width: 70%;
+        padding: 40px;
+    }
+
+    .wrapper .container .faq h1 {
+        font-size: 27px;
+    }
+
+    .wrapper .container .faq-questions h3 {
+        font-size: 15px;
+    }
+    .wrapper .container .faq-questions .answers{
+        font-size: 13px;
+    }
+}
+
+@media (min-width:768px) and (max-width: 992px) {
+    .wrapper .container {
+        width: 60%;
+        padding: 30px;
+    }
+
+    .wrapper .container .faq h1 {
+        font-size: 30px;
+    }
+
+    .wrapper .container .faq-questions h3 {
+        font-size: 17px;
+    }
+    .wrapper .container .faq-questions .answers{
+        font-size: 15px;
+    }
+
+}
+
+@media (max-width: 1024px) {
+    .wrapper .container {
+        width: 50%;
+    }
+}
+
+
